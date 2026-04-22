@@ -9,13 +9,12 @@ public class BaseTest {
     public WebDriver driver;
 
     @BeforeMethod
-    public void setUp(){
+    public void setUp() {
         driver = new ChromeDriver();
-
     }
-    @AfterMethod
-    public void close(){
-        driver.quit();
 
+    @AfterMethod
+    public void close() {
+        driver.quit();
     }
 }
